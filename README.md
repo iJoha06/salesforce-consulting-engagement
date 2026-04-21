@@ -23,8 +23,19 @@ I built a custom system to manage consulting engagements for Acme Services.
 
 ## 4. Deliverables (Screenshots)
 The following screenshots are included in the `/screenshots` folder:
-1. `1_Engagement_Record_LWC.png` - Engagement page with the custom component.
-2. `2_Activity_Logging.png` - Logged calls, emails, and events.
-3. `3_Flow_Chatter_Post.png` - The Chatter post triggered by the Flow.
-4. `4_Report_Chart.png` - "Active Engagements by Account" report and chart.
-5. `5_List_View_Chart.png` - List view with the donut chart.
+
+#### 1. Engagement Record Page + LWC Summary
+![Engagement Page](./screenshots/Engagement_Record_LWC.png)
+
+#### 2. Activity Timeline (Calls, Emails, Events)
+![Activities](./screenshots/Activity_Loggin.png)
+
+#### 3. Flow Automation (Chatter Post)
+![Flow Evidence](./screenshots/Flow_Firing.png)
+![Flow Evidence](./screenshots/Flow_Firing2.png)
+
+#### 4. Engagement Pipeline Report
+![Report Chart](./screenshots/Report_Chart.png)
+
+#### 5. List View with Donut Chart
+![List View](./screenshots/List_View_Chart.png)
