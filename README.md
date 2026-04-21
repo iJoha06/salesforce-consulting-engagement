@@ -1,18 +1,30 @@
-# Salesforce DX Project: Next Steps
+# Consulting Engagement Management - Assessment 
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## 1. Project Overview & Assumptions
+I built a custom system to manage consulting engagements for Acme Services.
+* **Assumptions:** - Every `Engagement__c` record is expected to be linked to an Account and an Opportunity to display financial metrics.
+    - Standard Activity configurations are used for tracking engagement history.
 
-## How Do You Plan to Deploy Your Changes?
+## 2. Testing Guide (Items #3–#8)
+* **#3 Activities:** Open any Engagement record and check the Activity Timeline to see logged calls, emails, and events.
+* **#4 App Builder:** The Engagement record page has been optimized with a Highlights Panel and the custom "Engagement Summary" LWC.
+* **#5 List Views:** Use the **"My Open Engagements"** or **"Q Engagements by Account"** list views. The latter includes a Budget donut chart.
+* **#6 LWC & Apex:** Use the "Quick Follow-Up Call" button on the Engagement page. It creates a task for tomorrow and refreshes the activity counts.
+* **#7 Flow:** Change an Engagement Status to "Completed" to trigger the automated Chatter post.
+* **#8 Reporting:** Open the **"Active Engagements by Account"** report to see the summary and bar chart.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## 3. Technical Paths & Metadata Names
+* **Apex Class:** `force-app/main/default/classes/EngagementSummaryController.cls`
+* **LWC Component:** `force-app/main/default/lwc/engagementSummary`
 
-## Configure Your Salesforce DX Project
+* **Flow Name:** `Opportunity Stage - Create Engagement Task`
+* **Report Name:** Engagement Pipeline
+* **List View Names:** "My Open Engagements", "Q Engagements by Account"
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## 4. Deliverables (Screenshots)
+The following screenshots are included in the `/screenshots` folder:
+1. `1_Engagement_Record_LWC.png` - Engagement page with the custom component.
+2. `2_Activity_Logging.png` - Logged calls, emails, and events.
+3. `3_Flow_Chatter_Post.png` - The Chatter post triggered by the Flow.
+4. `4_Report_Chart.png` - "Active Engagements by Account" report and chart.
+5. `5_List_View_Chart.png` - List view with the donut chart.
