@@ -11,7 +11,7 @@ I built a custom system to manage consulting engagements for Acme Services.
 * **#5 List Views:** Use the **"My Open Engagements"** or **"Q Engagements by Account"** list views. The latter includes a Budget donut chart.
 * **#6 LWC & Apex:** Use the "Quick Follow-Up Call" button on the Engagement page. It creates a task for tomorrow and refreshes the activity counts.
 * **#7 Flow:** Change an Engagement Status to "Completed" to trigger the automated Chatter post.
-* **#8 Reporting:** Open the **"Active Engagements by Account"** report to see the summary and bar chart.
+* **#8 Reporting:** Open the **"Engagement Pipeline"** report to see the summary and bar chart.
 
 ## 3. Technical Paths & Metadata Names
 * **Apex Class:** `force-app/main/default/classes/EngagementSummaryController.cls`
